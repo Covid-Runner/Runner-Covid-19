@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "29164d94-2d82-41ab-9cb6-be25b7303ddb",
+            "Value": {
+                "id": "902309d2-f33d-421d-ae6f-33aac995d2a2",
+                "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b42122f-5b32-41d3-b8e8-f568ba2b65d0",
             "Value": {
                 "id": "78853c66-6263-4eab-a9f3-1d8a0f786100",
@@ -124,6 +132,22 @@
                 "id": "3455b256-e4dd-4bf4-b422-f6391bd86e99",
                 "resourcePath": "views\\2beb730e-e15e-4b2d-8437-eddbbc62ee5f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2d4d46e9-a54b-40c0-91d6-9fb052b6210d",
+            "Value": {
+                "id": "19a68005-7996-4d2d-abd5-73f01a30f459",
+                "resourcePath": "sprites\\spr_darkdlul_cop\\spr_darkdlul_cop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ead4675-7262-43a0-bc53-c56d3d348d6f",
+            "Value": {
+                "id": "c3b5c984-74c0-4576-b080-fbed4ee1f0ed",
+                "resourcePath": "sprites\\spr_darkdlul_people1\\spr_darkdlul_people1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -143,6 +167,14 @@
             }
         },
         {
+            "Key": "37ab4290-af81-4fdf-ad11-87fae9f892f7",
+            "Value": {
+                "id": "500c8c1b-a4b6-4257-9b22-b25a5d7c3447",
+                "resourcePath": "objects\\obj_darkdlul_people2_stats\\obj_darkdlul_people2_stats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3c3a5235-6d3e-4b2c-97b5-19789bf03ae0",
             "Value": {
                 "id": "909c9a9a-c661-4589-b56d-8ec1334599ae",
@@ -151,11 +183,35 @@
             }
         },
         {
+            "Key": "3d6415f8-3302-4fc7-af2c-3fe5763d6ccd",
+            "Value": {
+                "id": "a22ec32c-4cce-46c2-9101-8ef45a1fea91",
+                "resourcePath": "scripts\\scr_move_hugger\\scr_move_hugger.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "41549b83-d623-4239-b046-cdcc29c18d67",
+            "Value": {
+                "id": "7ab20f3e-24cc-4968-874a-e39994735662",
+                "resourcePath": "objects\\obj_enemy_stats\\obj_enemy_stats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "41b007bb-6efe-4a0a-a7a8-28479ce041fb",
             "Value": {
                 "id": "9dbfe6b7-4bf1-4438-8baf-72a4e30eecb8",
                 "resourcePath": "rooms\\r_lvl1_street\\r_lvl1_street.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "42193a9e-4421-48d9-9c09-8ab5de60abc3",
+            "Value": {
+                "id": "c5995848-4767-4451-ad0e-2097c260a354",
+                "resourcePath": "views\\42193a9e-4421-48d9-9c09-8ab5de60abc3.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -191,6 +247,30 @@
             }
         },
         {
+            "Key": "51c2b670-cd84-48e5-812f-32bac9e16c5b",
+            "Value": {
+                "id": "4eec688f-1e6d-4d5a-b2a7-3a09682f0ad0",
+                "resourcePath": "objects\\obj_darkdlul_Joueur1\\obj_darkdlul_Joueur1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51e036c7-f776-4243-aa08-8cbcf7ef3739",
+            "Value": {
+                "id": "707208d1-ffbe-46e7-bb10-210e031a5359",
+                "resourcePath": "objects\\obj_darkdlul_american_stats\\obj_darkdlul_american_stats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "52464402-b296-4762-b0c2-b1024f8abea6",
+            "Value": {
+                "id": "589f6abe-1dc8-49fe-b6f6-060599d1a078",
+                "resourcePath": "objects\\obj_darkdlul_cougher\\obj_darkdlul_cougher.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "53121cac-20fd-48fc-82c6-91b5e0e81fec",
             "Value": {
                 "id": "7ac00d83-abef-4968-a34a-89d361f7ddf8",
@@ -203,6 +283,14 @@
             "Value": {
                 "id": "ed12a02e-d1f0-4744-ac59-b2b2beaa761e",
                 "resourcePath": "objects\\obj_yeager_piano_fur_elise\\obj_yeager_piano_fur_elise.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "59c6c407-48de-445d-95e6-19c0ca527f41",
+            "Value": {
+                "id": "b2aaa1f8-44ae-4125-af1d-6aa8fb4685b5",
+                "resourcePath": "objects\\obj_darkdlul_people1\\obj_darkdlul_people1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -220,6 +308,14 @@
                 "id": "bdfb36e4-3828-44f3-a060-7bd8b7ac37f1",
                 "resourcePath": "rooms\\r_yeager_room\\r_yeager_room.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "60ae2829-7618-4029-971a-e0cf09498a51",
+            "Value": {
+                "id": "fdddd42d-31bf-4bf8-88f9-f965ff05b514",
+                "resourcePath": "scripts\\scr_move_basic\\scr_move_basic.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -252,6 +348,30 @@
                 "id": "c96439b9-0e42-47df-ab86-76b29feb9401",
                 "resourcePath": "views\\6a18f2c1-eda7-47bf-99b5-eaa1604f62b8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6a19b7d4-7262-4661-b6c3-16fbde48d44b",
+            "Value": {
+                "id": "e736a952-84ea-425c-89b6-8f474c2b6037",
+                "resourcePath": "views\\6a19b7d4-7262-4661-b6c3-16fbde48d44b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b33430f-46ce-498f-82e7-98208c912043",
+            "Value": {
+                "id": "f72440f0-8381-48bb-9aee-2bb71e65633a",
+                "resourcePath": "objects\\obj_darkdlul_hugger\\obj_darkdlul_hugger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6ca0d506-c466-4606-8958-812d904d4894",
+            "Value": {
+                "id": "ad137fad-fc8b-44b9-b81d-e23e9d7afa12",
+                "resourcePath": "sprites\\spr_darkdlul_hugger\\spr_darkdlul_hugger.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -351,11 +471,27 @@
             }
         },
         {
+            "Key": "9107f14c-c3f1-4931-9d20-5e31cc2ee2f4",
+            "Value": {
+                "id": "259c479b-49bb-45fa-a490-e245e70da180",
+                "resourcePath": "sprites\\spr_darkdlul_people2\\spr_darkdlul_people2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "921862f1-4a53-42fb-9aec-b750a49414ec",
             "Value": {
                 "id": "19cfb95e-6c3e-4166-8439-22e8e07279e0",
                 "resourcePath": "views\\921862f1-4a53-42fb-9aec-b750a49414ec.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92c8be99-643e-469a-8b01-225b2ac7b956",
+            "Value": {
+                "id": "f3fada82-33ed-476d-bdc8-16ad767383a7",
+                "resourcePath": "objects\\obj_darkdlul_people2\\obj_darkdlul_people2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -399,11 +535,35 @@
             }
         },
         {
+            "Key": "9c79670f-9e98-48ee-9980-9ce081725945",
+            "Value": {
+                "id": "fe344089-77e9-4f74-a002-021acb0fc636",
+                "resourcePath": "objects\\obj_darkdlul_cop\\obj_darkdlul_cop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9cf9c4d0-aaa5-4c42-98a1-302a0c564acc",
+            "Value": {
+                "id": "362f6e4a-d12e-43e5-ac8e-cef2fd0a8859",
+                "resourcePath": "views\\9cf9c4d0-aaa5-4c42-98a1-302a0c564acc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a5ba4751-9a24-4ebd-96f0-44b12b66845b",
             "Value": {
                 "id": "1ab192ed-1e82-4324-95dd-959c5535724f",
                 "resourcePath": "views\\a5ba4751-9a24-4ebd-96f0-44b12b66845b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a90144ba-b57f-4c13-b439-f17c5f83ded1",
+            "Value": {
+                "id": "b4753296-82a2-4f7c-b53d-135c0c35bb22",
+                "resourcePath": "sprites\\spr_darkdlul_american\\spr_darkdlul_american.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -436,6 +596,14 @@
                 "id": "a63c10a6-3d40-48c4-97ef-266faa280ce5",
                 "resourcePath": "views\\bc607c17-f73e-414d-89f4-a0a36f258520.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c22e4a9a-f457-410c-bd9f-73a2fd38ca2c",
+            "Value": {
+                "id": "ad1c07d0-155b-484d-b99b-ec775e37d144",
+                "resourcePath": "sprites\\spr_darkdlul_cougher\\spr_darkdlul_cougher.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -519,6 +687,14 @@
             }
         },
         {
+            "Key": "d744bc8b-74fc-425c-a963-2fe19389139d",
+            "Value": {
+                "id": "5e76b81a-83c8-4a10-962f-8ecf7d8cb3ae",
+                "resourcePath": "sprites\\spr_darkdlul_Joueur1\\spr_darkdlul_Joueur1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dda70505-4ba0-4c8a-9817-12aa97dd2f56",
             "Value": {
                 "id": "18be29d8-47f7-4035-956d-ae84c5fc3364",
@@ -543,16 +719,51 @@
             }
         },
         {
+            "Key": "e653e4db-3416-49f2-aac6-1f39a22fa749",
+            "Value": {
+                "id": "55f7ea66-0d1a-417d-a67c-d15773598dd0",
+                "resourcePath": "objects\\obj_darkdlul_cougher_stats\\obj_darkdlul_cougher_stats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "eea1212e-5ce3-4983-9652-f501a04ac076",
+            "Value": {
+                "id": "729a20e9-a94a-40ad-b168-e2012d2eb4cb",
+                "resourcePath": "objects\\obj_darkdlul_american\\obj_darkdlul_american.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f4b57554-ce9b-409f-8767-086a02034d8d",
+            "Value": {
+                "id": "24553272-8b5d-48a0-bd69-4734ceba5aef",
+                "resourcePath": "objects\\obj_darkdlul_people1_stats\\obj_darkdlul_people1_stats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f4ce6e18-1d5c-4767-a568-4609474988db",
             "Value": {
                 "id": "a3c701d4-29c5-492a-a629-f25e4f08ec01",
                 "resourcePath": "objects\\obj_yeager_interaction_parent\\obj_yeager_interaction_parent.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "f76037f2-bba4-4320-b546-b145cbc02d5e",
+            "Value": {
+                "id": "40e74804-d949-4a90-9af3-c8eeef7e4bbd",
+                "resourcePath": "scripts\\scr_move_cop\\scr_move_cop.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        "6f0dc2f1-590b-4329-8d43-be8ad31bb0bc"
+        "6f0dc2f1-590b-4329-8d43-be8ad31bb0bc",
+        "3d6415f8-3302-4fc7-af2c-3fe5763d6ccd",
+        "f76037f2-bba4-4320-b546-b145cbc02d5e",
+        "60ae2829-7618-4029-971a-e0cf09498a51"
     ],
     "tutorial": ""
 }
