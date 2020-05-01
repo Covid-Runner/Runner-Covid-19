@@ -135,11 +135,27 @@
             }
         },
         {
+            "Key": "4d26e6ec-22c5-4112-bb23-fc4c519f1c2b",
+            "Value": {
+                "id": "5f3e9431-8cfe-445d-aa3a-7ad146a19178",
+                "resourcePath": "sounds\\so_yeager_Beethoven___F_r_Elise\\so_yeager_Beethoven___F_r_Elise.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "53121cac-20fd-48fc-82c6-91b5e0e81fec",
             "Value": {
                 "id": "7ac00d83-abef-4968-a34a-89d361f7ddf8",
                 "resourcePath": "views\\53121cac-20fd-48fc-82c6-91b5e0e81fec.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56e8187f-05ff-4129-9154-d563de3a963a",
+            "Value": {
+                "id": "ed12a02e-d1f0-4744-ac59-b2b2beaa761e",
+                "resourcePath": "objects\\obj_yeager_piano_fur_elise\\obj_yeager_piano_fur_elise.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -179,6 +195,14 @@
             "Value": {
                 "id": "b3647685-3a40-4c9c-a90d-41fbf195c1f6",
                 "resourcePath": "sprites\\spr_yeager_wall2\\spr_yeager_wall2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "700c5666-75ae-4377-bc94-bf8d4be506ac",
+            "Value": {
+                "id": "79e561d3-5ed0-4301-9adc-958d270277e2",
+                "resourcePath": "sprites\\spr_yeager_piano\\spr_yeager_piano.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -303,6 +327,14 @@
             }
         },
         {
+            "Key": "b7839e2f-c248-4edd-ad2f-5bcb4f6504a9",
+            "Value": {
+                "id": "b2f8ba36-34da-4677-8bd0-c280f184ec29",
+                "resourcePath": "views\\b7839e2f-c248-4edd-ad2f-5bcb4f6504a9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bc607c17-f73e-414d-89f4-a0a36f258520",
             "Value": {
                 "id": "a63c10a6-3d40-48c4-97ef-266faa280ce5",
@@ -380,6 +412,14 @@
                 "id": "0878a8f5-eada-49c7-8a02-9aea73aba6bc",
                 "resourcePath": "views\\e4bd8a9f-7ebd-4138-a9c1-95dc6a764dbf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f4ce6e18-1d5c-4767-a568-4609474988db",
+            "Value": {
+                "id": "a3c701d4-29c5-492a-a629-f25e4f08ec01",
+                "resourcePath": "objects\\obj_yeager_interaction_parent\\obj_yeager_interaction_parent.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

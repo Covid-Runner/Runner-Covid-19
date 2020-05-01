@@ -6,18 +6,20 @@ if (instance_exists(obj_yeager_player)) {
 
 	
 	//Barre d'endurance
+	var text_endurance = "Endurance";
 	if (global.current_endurance > obj_yeager_player.tired_endurance) {
 		draw_set_color(c_green);
 		textscale = 1;
 	} else {
 		draw_set_color(c_red);
 		textscale = 2;
+		text_endurance = "Endurance !!!!";
 	}
 	draw_line_width(x_endurance, y_endurance, x_endurance + global.current_endurance * 2, y_endurance, 30);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
 	draw_set_color(c_black);
-	draw_text_transformed(x_endurance + 25, y_endurance, "Endurance", textscale, textscale, 0);
+	draw_text_transformed(x_endurance + 25, y_endurance, text_endurance, textscale, textscale, 0);
 
 
 	//Barre de vie

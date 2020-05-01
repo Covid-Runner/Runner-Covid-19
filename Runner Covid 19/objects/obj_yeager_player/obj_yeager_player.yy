@@ -269,6 +269,20 @@
             "value": "42",
             "varName": "low_life",
             "varType": 0
+        },
+        {
+            "id": "feb3b5d7-505c-4cd0-91d3-277bc1bd7efa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "range_interaction",
+            "varType": 0
         }
     ],
     "solid": false,
