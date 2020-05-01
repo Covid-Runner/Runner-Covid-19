@@ -12,20 +12,52 @@ if keyboard_check(ord("A")) {
 	image_angle += 5
 }
 
-if keyboard_check(vk_nokey) {
+if keyboard_check_released(ord("W")) {
 	current_speed = 0;
+	old_speed = 0;
 }
 
 //Gestion du deplacement
 if keyboard_check(ord("W")) {
+	current_speed = old_speed;
 	current_speed += variation_speed;
+	old_speed = current_speed;
+	
 	if (current_speed > max_speed) current_speed = max_speed;
+
+	current_endurance += variation_up_endurance;
+
+	if (current_endurance > max_endurance) current_endurance = max_endurance;
+
+	if (keyboard_check(vk_lshift) ) {
+		current_speed = current_speed * multiplier_run;
+	
+		current_endurance -= variation_down_endurance;
+	
+		if (current_speed > max_speed * 2) current_speed = max_speed * 2;
+	
+		show_debug_message("run");
+		show_debug_message(current_speed);
+	}
+	
+	if current_endurance < tired_endurance {
+		current_speed = tired_speed;
+	}	
+	
+	show_debug_message("endurance");
+	show_debug_message(current_endurance);
+	show_debug_message("walk");
+	show_debug_message(current_speed);
 }
 
 if keyboard_check(ord("S")) {
 	current_speed -= variation_speed;
+	
 	if (current_speed < -max_speed) current_speed = -max_speed;
+
 }
+
+
 
 //Gestion du quit
 if keyboard_check(vk_escape) {
