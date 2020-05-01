@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "983b9993-798a-4574-a35f-b739128c13cb"
+        },
+        {
+            "id": "ddcba961-e968-4e36-a134-4433732d5125",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "983b9993-798a-4574-a35f-b739128c13cb"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -32,48 +42,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "783c75aa-1d4c-4814-80ac-c1ecb60792cc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "current_speed",
-            "varType": 0
-        },
-        {
-            "id": "ad9c0e76-8e6b-4901-b14c-ba13ecf691df",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "5",
-            "varName": "max_speed",
-            "varType": 0
-        },
-        {
-            "id": "534d7274-9316-4d79-b307-b3baf25f2a2f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.5",
-            "varName": "variation_speed",
-            "varType": 0
-        },
         {
             "id": "08013660-878e-43ed-ab0a-d58027417808",
             "modelName": "GMObjectProperty",
