@@ -1,120 +1,57 @@
 /// @description Core Game
+var bbox_side;
 
-//input manager
-//Gestion de la direction
-if keyboard_check(ord("D")) {
-	direction -= 5;
-	image_angle -= 5
-}
+//input + gestion du sprint
+key_right = keyboard_check(ord("D"));
+key_left = keyboard_check(ord("A"));
+key_up = keyboard_check(ord("W"));
+key_down = keyboard_check(ord("S"));
 
-if keyboard_check(ord("A")) {
-	direction += 5;
-	image_angle += 5
-}
-
-
-
-//Gestion du deplacement
-if keyboard_check_released(ord("W")) {
-	current_speed = 0;
-	old_speed = 0;
-}
-
-if keyboard_check_released(ord("S")) {
-	current_speed = 0;
-	old_speed = 0;
-}
-
-if keyboard_check(vk_nokey) {
-	global.current_endurance += 2 * variation_up_endurance;
-	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
-}
-
-if keyboard_check(ord("W")) {
-	current_speed = old_speed;
-	current_speed += variation_speed;
-	old_speed = current_speed;
-	
-	if (current_speed > max_speed) current_speed = max_speed;
-
+if (!keyboard_check(vk_lshift) && (!key_down || !key_up || !key_right || !key_left)) {
 	global.current_endurance += variation_up_endurance;
-
 	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
+} else {
+	global.current_endurance -= variation_down_endurance;
+}
 
-	if (keyboard_check(vk_lshift) ) {
-		current_speed = current_speed * multiplier_run;
-	
-		global.current_endurance -= variation_down_endurance;
-	
-		if (current_speed > max_speed * 2) current_speed = max_speed * 2;
-	
-		show_debug_message("run");
-		show_debug_message(current_speed);
-		
+
+if (!keyboard_check(vk_lshift)) {
+	if (global.current_endurance < tired_endurance)	hsp = (key_right - key_left) * 1 else hsp = (key_right - key_left) * 2; 	
+} else {
+	if (global.current_endurance < tired_endurance)	hsp = (key_right - key_left) * 1 else hsp = (key_right - key_left) * 4; 	
+}
+
+
+if (!keyboard_check(vk_lshift)) {
+		if (global.current_endurance < tired_endurance)	vsp = (key_down - key_up) * 1 else vsp = (key_down - key_up) * 2; 	
+} else {
+	if (global.current_endurance < tired_endurance)	vsp = (key_down - key_up) * 1 else vsp = (key_down - key_up) * 4; 	
+}
+
+
+
+
+//for (var i = 0; i < 5; i++)
+for (var i = 0; i < array_length_1d(arrayTile); i++)
+{
+	tilemap = layer_tilemap_get_id(arrayTile[i]);
+	//horizontal collision
+	if (hsp > 0) bbox_side = bbox_right else bbox_side = bbox_left;
+	if (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_top) != 0) || (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_bottom) != 0) {
+		if (hsp > 0) x = x - (x mod 16) + 15 - (bbox_right - x);
+		else x = x - (x mod 16) - (bbox_left -x);
+		hsp = 0;
 	}
-	
-	if global.current_endurance < tired_endurance {
-		current_speed = tired_speed;
-	}	
-	
-	show_debug_message("endurance");
-	show_debug_message(current_endurance);
-	show_debug_message("walk");
-	show_debug_message(current_speed);
-}
 
-if keyboard_check(ord("S")) {
-	current_speed -= variation_speed;
-	
-	if (current_speed < -max_speed) current_speed = -max_speed;
-
-}
-
-
-
-//Gestion du quit
-if keyboard_check(vk_escape) {
-	game_end();
-}
-
-
-//Collisions
-//Collision avec les murs
-var _speedx = lengthdir_x(current_speed, direction);
-var _speedy = lengthdir_y(current_speed, direction);
-
-
-if (place_meeting(x + _speedx,y + _speedy, instance_place(x + _speedx,y + _speedy, obj_yeager_collision_parent))) {
-		current_speed = 0;		
+	//Vertical collision
+	if (vsp > 0) bbox_side = bbox_bottom else bbox_side = bbox_top;
+	if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + vsp) != 0) || (tilemap_get_at_pixel(tilemap, bbox_right, bbox_side + vsp) != 0) {
+		if (vsp > 0) y = y - (y mod 16) + 15 - (bbox_bottom - y);
+		else y = y - (y mod 16) - (bbox_top - y);
+		vsp = 0;
 	}
 
 
-//Collision avec les bords de la map, peut etre des cas manquants
-if (x + sprite_width / 2 + _speedx > room_width) current_speed = 0;
-if (y + sprite_height / 2 +_speedy > room_height) current_speed = 0;
-if (x - sprite_width / 2 +_speedx < 0) current_speed = 0;
-if (y - sprite_height / 2 +_speedy < 0) current_speed = 0;
-
-
-speed = current_speed;
-
-
-
-//Gestion des interactions
-if keyboard_check_pressed(vk_space) {
-	var _rangex = lengthdir_x(range_interaction, direction);
-	var _rangey = lengthdir_y(range_interaction, direction);
-	var _obj = instance_place(x + _rangex,y + _rangey, obj_yeager_interaction_parent);
-	if (place_meeting(x + _rangex, y + _rangey, _obj)) {
-		switch object_get_name(_obj.object_index) {
-			//Case du piano Fur Elise
-			case "obj_yeager_piano_fur_elise" : {
-				if !global.object_sound_playing {
-					global.object_sound_playing = true;
-					global.object_sound = _obj.obj_sound;
-				}
-				break;
-			}
-		}
-	}
 }
+x += hsp;
+y += vsp;
