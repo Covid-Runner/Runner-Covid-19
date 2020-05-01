@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "6f0dc2f1-590b-4329-8d43-be8ad31bb0bc",
+            "Value": {
+                "id": "2aeedd59-f2b0-433d-8917-98061f7ea6e1",
+                "resourcePath": "scripts\\scr_yeager_any_audio_is_playing\\scr_yeager_any_audio_is_playing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "700c5666-75ae-4377-bc94-bf8d4be506ac",
             "Value": {
                 "id": "79e561d3-5ed0-4301-9adc-958d270277e2",
@@ -424,7 +432,7 @@
         }
     ],
     "script_order": [
-        
+        "6f0dc2f1-590b-4329-8d43-be8ad31bb0bc"
     ],
     "tutorial": ""
 }

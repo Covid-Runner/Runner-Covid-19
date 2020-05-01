@@ -106,13 +106,15 @@ if keyboard_check_pressed(vk_space) {
 	var _rangey = lengthdir_y(range_interaction, direction);
 	var _obj = instance_place(x + _rangex,y + _rangey, obj_yeager_interaction_parent);
 	if (place_meeting(x + _rangex, y + _rangey, _obj)) {
-			show_debug_message("Ïnteraction");
-			
-			if (object_get_name(_obj.object_index) == "obj_yeager_piano_fur_elise") {
-				if !audio_is_playing(_obj.obj_sound) {
-					audio_play_sound(_obj.obj_sound, 5, false);
+		switch object_get_name(_obj.object_index) {
+			//Case du piano Fur Elise
+			case "obj_yeager_piano_fur_elise" : {
+				if !global.object_sound_playing {
+					global.object_sound_playing = true;
+					global.object_sound = _obj.obj_sound;
 				}
+				break;
 			}
-			
+		}
 	}
 }
