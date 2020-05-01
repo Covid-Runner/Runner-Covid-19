@@ -12,12 +12,24 @@ if keyboard_check(ord("A")) {
 	image_angle += 5
 }
 
+
+
+//Gestion du deplacement
 if keyboard_check_released(ord("W")) {
 	current_speed = 0;
 	old_speed = 0;
 }
 
-//Gestion du deplacement
+if keyboard_check_released(ord("S")) {
+	current_speed = 0;
+	old_speed = 0;
+}
+
+if keyboard_check(vk_nokey) {
+	global.current_endurance += 2 * variation_up_endurance;
+	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
+}
+
 if keyboard_check(ord("W")) {
 	current_speed = old_speed;
 	current_speed += variation_speed;
@@ -25,22 +37,23 @@ if keyboard_check(ord("W")) {
 	
 	if (current_speed > max_speed) current_speed = max_speed;
 
-	current_endurance += variation_up_endurance;
+	global.current_endurance += variation_up_endurance;
 
-	if (current_endurance > max_endurance) current_endurance = max_endurance;
+	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
 
 	if (keyboard_check(vk_lshift) ) {
 		current_speed = current_speed * multiplier_run;
 	
-		current_endurance -= variation_down_endurance;
+		global.current_endurance -= variation_down_endurance;
 	
 		if (current_speed > max_speed * 2) current_speed = max_speed * 2;
 	
 		show_debug_message("run");
 		show_debug_message(current_speed);
+		
 	}
 	
-	if current_endurance < tired_endurance {
+	if global.current_endurance < tired_endurance {
 		current_speed = tired_speed;
 	}	
 	
@@ -84,3 +97,24 @@ if (y - sprite_height / 2 +_speedy < 0) current_speed = 0;
 
 
 speed = current_speed;
+
+
+
+//Gestion des interactions
+if keyboard_check_pressed(vk_space) {
+	var _rangex = lengthdir_x(range_interaction, direction);
+	var _rangey = lengthdir_y(range_interaction, direction);
+	var _obj = instance_place(x + _rangex,y + _rangey, obj_yeager_interaction_parent);
+	if (place_meeting(x + _rangex, y + _rangey, _obj)) {
+		switch object_get_name(_obj.object_index) {
+			//Case du piano Fur Elise
+			case "obj_yeager_piano_fur_elise" : {
+				if !global.object_sound_playing {
+					global.object_sound_playing = true;
+					global.object_sound = _obj.obj_sound;
+				}
+				break;
+			}
+		}
+	}
+}
