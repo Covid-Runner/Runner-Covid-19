@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "236bd103-f29f-42f2-a2f2-056608523451",
+            "Value": {
+                "id": "9399110a-9014-48ad-af59-3bd99eeb6ac6",
+                "resourcePath": "objects\\obj_yeager_gui\\obj_yeager_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24bd7778-7fad-4057-94b8-eec4e7af2987",
             "Value": {
                 "id": "52e0ad84-9736-476b-b1fb-4d9b193ee2b3",

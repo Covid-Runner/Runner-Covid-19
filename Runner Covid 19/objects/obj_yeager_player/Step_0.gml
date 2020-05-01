@@ -17,6 +17,11 @@ if keyboard_check_released(ord("W")) {
 	old_speed = 0;
 }
 
+if keyboard_check(vk_nokey) {
+	global.current_endurance += 2 * variation_up_endurance;
+	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
+}
+
 //Gestion du deplacement
 if keyboard_check(ord("W")) {
 	current_speed = old_speed;
@@ -25,22 +30,23 @@ if keyboard_check(ord("W")) {
 	
 	if (current_speed > max_speed) current_speed = max_speed;
 
-	current_endurance += variation_up_endurance;
+	global.current_endurance += variation_up_endurance;
 
-	if (current_endurance > max_endurance) current_endurance = max_endurance;
+	if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
 
 	if (keyboard_check(vk_lshift) ) {
 		current_speed = current_speed * multiplier_run;
 	
-		current_endurance -= variation_down_endurance;
+		global.current_endurance -= variation_down_endurance;
 	
 		if (current_speed > max_speed * 2) current_speed = max_speed * 2;
 	
 		show_debug_message("run");
 		show_debug_message(current_speed);
+		
 	}
 	
-	if current_endurance < tired_endurance {
+	if global.current_endurance < tired_endurance {
 		current_speed = tired_speed;
 	}	
 	
