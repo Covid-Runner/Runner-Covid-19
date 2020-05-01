@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "729bc60a-ada0-4090-bbb9-2457de62855a",
+            "Value": {
+                "id": "a4ccc8cd-6df0-48b0-ac92-a422af203839",
+                "resourcePath": "objects\\obj_yeager_camera\\obj_yeager_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "73575b16-0bca-422f-953b-40b6b408bac0",
             "Value": {
                 "id": "303db087-9306-4625-9ffe-a9bfbf3b9c06",

@@ -27,6 +27,11 @@ if keyboard_check(ord("S")) {
 	if (current_speed < -max_speed) current_speed = -max_speed;
 }
 
+//Gestion du quit
+if keyboard_check(vk_escape) {
+	game_end();
+}
+
 
 //Collisions
 //Collision avec les murs
