@@ -31,7 +31,8 @@ if (!keyboard_check(vk_lshift)) {
 
 
 
-for (var i = 0; i < 5; i++)
+//for (var i = 0; i < 5; i++)
+for (var i = 0; i < array_length_1d(arrayTile); i++)
 {
 	tilemap = layer_tilemap_get_id(arrayTile[i]);
 	//horizontal collision
