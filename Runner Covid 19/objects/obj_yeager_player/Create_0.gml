@@ -17,3 +17,5 @@ arrayTile[0,5] = "Street_modern_Things_on_ground";
 
 arrayTile[1,0] = "Mall_Main_Display";
 
+global.bag = ds_list_create();
+global.bag_maxsize = 4;

@@ -36,4 +36,51 @@ if (instance_exists(obj_yeager_player)) {
 	draw_set_color(c_black);
 	draw_text_transformed(x_life + 25, y_life, "Health", textscale, textscale, 0);
 
+
+	//Inventaire
+	if (ds_list_size(global.bag) != 0)
+	{
+		var x_temp = x_bag;
+		var y_temp = y_bag;
+		var text = spr_yeager_box;
+		for (var i = 0; i < ds_list_size(global.bag); i++)
+		{ 
+			//show_debug_message(global.bag[| i]);
+			switch (global.bag[| i])
+			{
+				case BOX_CONTENT.GUN:
+				{
+					text = spr_gun;
+					break;
+				}
+				case BOX_CONTENT.BOTTE:
+				{
+					text = spr_bottes;
+					break;
+				}
+				case BOX_CONTENT.CD:
+				{
+					text = spr_cd;
+					break;
+				}
+				case BOX_CONTENT.FOOD:
+				{
+					text = spr_food;
+					break;
+				}
+			}
+			draw_sprite_pos(text,
+							0,
+							x_temp + marge, 
+							y_temp, 
+							x_temp + marge + (sprite_get_width(spr_yeager_box) * multiplier),
+							y_temp,
+							x_temp + marge + (sprite_get_width(spr_yeager_box) * multiplier),
+							y_temp + (sprite_get_height(spr_yeager_box) * multiplier),
+							x_temp + marge,
+							y_temp + (sprite_get_height(spr_yeager_box) * multiplier),
+							1);
+			x_temp = x_temp + (sprite_get_height(spr_yeager_box) * multiplier) + marge;
+		}
+	}
 }
