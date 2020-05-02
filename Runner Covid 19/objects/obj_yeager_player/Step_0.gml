@@ -3,8 +3,8 @@ var bbox_side;
 
 //input + gestion du sprint
 key_right = keyboard_check(ord("D"));
-key_left = keyboard_check(ord("A"));
-key_up = keyboard_check(ord("W"));
+key_left = keyboard_check(ord("Q")) || keyboard_check(ord("A"));
+key_up = keyboard_check(ord("Z")) || keyboard_check(ord("W"));
 key_down = keyboard_check(ord("S"));
 
 if (!keyboard_check(vk_lshift) && (!key_down || !key_up || !key_right || !key_left)) {
@@ -30,11 +30,19 @@ if (!keyboard_check(vk_lshift)) {
 
 
 
-
-//for (var i = 0; i < 5; i++)
-for (var i = 0; i < array_length_1d(arrayTile); i++)
+switch(room_get_name(room))
 {
-	tilemap = layer_tilemap_get_id(arrayTile[i]);
+	case "r_lvl1_street":
+		var j = 0;
+		break;
+	case "r_lvl2_mall":
+		var j = 1;
+		break;
+}
+//for (var i = 0; i < 5; i++)
+for (var i = 0; i < array_length_2d(arrayTile,j); i++)
+{
+	tilemap = layer_tilemap_get_id(arrayTile[j,i]);
 	//horizontal collision
 	if (hsp > 0) bbox_side = bbox_right else bbox_side = bbox_left;
 	if (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_top) != 0) || (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_bottom) != 0) {
