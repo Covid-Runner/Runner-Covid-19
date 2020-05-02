@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2eeeb956-68fd-4d89-bcc9-54024773aa7d",
+            "Value": {
+                "id": "2a49ca30-6e83-412b-bdb9-6ee80394eae8",
+                "resourcePath": "sounds\\so_tsae_titlescreen\\so_tsae_titlescreen.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "37ab4290-af81-4fdf-ad11-87fae9f892f7",
             "Value": {
                 "id": "500c8c1b-a4b6-4257-9b22-b25a5d7c3447",
@@ -484,6 +492,14 @@
                 "id": "c238b709-818d-4860-8537-c6b80a93d166",
                 "resourcePath": "views\\a9c9b03f-18c4-4bbe-a428-eb874ed47bf4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b08782c7-3294-4a99-bd74-b753455eb774",
+            "Value": {
+                "id": "bc97f0ed-d7f4-4647-87cc-a09d31362f9a",
+                "resourcePath": "sprites\\spr_tsae_player\\spr_tsae_player.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
