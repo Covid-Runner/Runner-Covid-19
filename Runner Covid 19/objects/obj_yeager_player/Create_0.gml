@@ -15,3 +15,5 @@ arrayTile[3] = "Street_modern_building";
 arrayTile[4] = "Street_classic_Things_on_ground";
 arrayTile[5] = "Street_modern_Things_on_ground";
 
+global.bag = ds_list_create();
+global.bag_maxsize = 4;

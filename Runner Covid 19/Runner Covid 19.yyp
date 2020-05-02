@@ -263,14 +263,6 @@
             }
         },
         {
-            "Key": "56e8187f-05ff-4129-9154-d563de3a963a",
-            "Value": {
-                "id": "ed12a02e-d1f0-4744-ac59-b2b2beaa761e",
-                "resourcePath": "objects\\obj_yeager_piano_fur_elise\\obj_yeager_piano_fur_elise.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "59c6c407-48de-445d-95e6-19c0ca527f41",
             "Value": {
                 "id": "b2aaa1f8-44ae-4125-af1d-6aa8fb4685b5",
@@ -284,14 +276,6 @@
                 "id": "fdddd42d-31bf-4bf8-88f9-f965ff05b514",
                 "resourcePath": "scripts\\scr_move_basic\\scr_move_basic.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "6271b7e9-5d53-48be-9cb2-35db2424528d",
-            "Value": {
-                "id": "61285b16-a178-4061-8191-19211c3e487b",
-                "resourcePath": "rooms\\r_lvl2_street1\\r_lvl2_street1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -431,6 +415,14 @@
             }
         },
         {
+            "Key": "81469ef2-b584-49f2-a465-2a364f08f2b3",
+            "Value": {
+                "id": "30aa714e-fc5e-4858-a7ec-0766add81782",
+                "resourcePath": "sprites\\spr_yeager_box\\spr_yeager_box.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b1eadb4-40fa-44d0-8210-045a6e79ce9a",
             "Value": {
                 "id": "4c4c1bab-e10a-42ce-9c38-74370cb1247c",
@@ -495,6 +487,14 @@
             }
         },
         {
+            "Key": "9a5a3fbd-36ca-40b2-8288-fd66a0948a59",
+            "Value": {
+                "id": "7203fee5-d019-4778-8961-28ba0ce88902",
+                "resourcePath": "sprites\\spr_yeager_fusil\\spr_yeager_fusil.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9c79670f-9e98-48ee-9980-9ce081725945",
             "Value": {
                 "id": "fe344089-77e9-4f74-a002-021acb0fc636",
@@ -535,11 +535,27 @@
             }
         },
         {
+            "Key": "b9822c95-4bdb-4a30-b846-e2fdd659ee2c",
+            "Value": {
+                "id": "e5cc718a-086d-4f5c-ab5b-f0c28b21a2a3",
+                "resourcePath": "objects\\obj_yeager_box\\obj_yeager_box.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bceaa755-0c69-48eb-9426-fd813e972d96",
             "Value": {
                 "id": "297a08f3-14cd-4d4f-985e-0db8041e1a95",
                 "resourcePath": "views\\bceaa755-0c69-48eb-9426-fd813e972d96.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c01d6204-3550-447f-ae16-e58dbbbd7450",
+            "Value": {
+                "id": "00c46304-ea7a-4b9e-b58e-f40028702674",
+                "resourcePath": "sprites\\spr_yeager_mp3\\spr_yeager_mp3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -623,6 +639,14 @@
             }
         },
         {
+            "Key": "e317d77a-7084-47fd-a2ba-751909278087",
+            "Value": {
+                "id": "d1039e32-7a59-4234-9d6c-fd7db9407c30",
+                "resourcePath": "sprites\\spr_yeager_bottes\\spr_yeager_bottes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e4bd8a9f-7ebd-4138-a9c1-95dc6a764dbf",
             "Value": {
                 "id": "0878a8f5-eada-49c7-8a02-9aea73aba6bc",
@@ -651,14 +675,6 @@
             "Value": {
                 "id": "24553272-8b5d-48a0-bd69-4734ceba5aef",
                 "resourcePath": "objects\\obj_darkdlul_people1_stats\\obj_darkdlul_people1_stats.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f4ce6e18-1d5c-4767-a568-4609474988db",
-            "Value": {
-                "id": "a3c701d4-29c5-492a-a629-f25e4f08ec01",
-                "resourcePath": "objects\\obj_yeager_interaction_parent\\obj_yeager_interaction_parent.yy",
                 "resourceType": "GMObject"
             }
         },

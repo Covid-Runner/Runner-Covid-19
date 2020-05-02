@@ -30,7 +30,7 @@ if (menu_x > gui_width + 150) && (menu_committed != -1)
 	{
 		case 2 : default :
 		{
-			scr_yeager_transition(TRANS_MODE.NEXT);
+			scr_yeager_transition(TRANS_MODE.GOTO, r_lvl1_street);
 			break;
 		}
 		case 0 :
