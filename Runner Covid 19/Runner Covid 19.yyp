@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "13b5ca7f-f330-4164-8311-04c50bf80ef3",
+            "Value": {
+                "id": "81502a45-b569-4fa3-8d08-c62d765b747e",
+                "resourcePath": "scripts\\scr_yeager_transition\\scr_yeager_transition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1d98b25c-3f08-483d-8da8-af8b15badf00",
             "Value": {
                 "id": "0c6c1a2d-776e-4072-af62-477414f57eed",
@@ -175,6 +183,14 @@
             }
         },
         {
+            "Key": "4330b53e-fff3-45e8-839b-1b562b22609f",
+            "Value": {
+                "id": "816c8192-4227-498e-97e2-bb5af14dd295",
+                "resourcePath": "sprites\\spr_door\\spr_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "452d827a-48ef-4a19-8119-72d149d983da",
             "Value": {
                 "id": "b3d30262-fc34-477a-a6a4-57cceb0fa081",
@@ -263,6 +279,14 @@
             }
         },
         {
+            "Key": "6271b7e9-5d53-48be-9cb2-35db2424528d",
+            "Value": {
+                "id": "61285b16-a178-4061-8191-19211c3e487b",
+                "resourcePath": "rooms\\r_lvl2_street1\\r_lvl2_street1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6381b85c-0e3f-464b-a363-a13fccd1a21a",
             "Value": {
                 "id": "fddc71cc-ccb0-4d06-9441-0259db883709",
@@ -276,6 +300,14 @@
                 "id": "a6be845c-035e-4941-853a-37e376cbe3c6",
                 "resourcePath": "sprites\\spr_yeager_player\\spr_yeager_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "66cc4475-34ee-46c8-ae8c-102ff625597c",
+            "Value": {
+                "id": "83ef5d5f-31ef-4e20-9b31-8b276780b3f7",
+                "resourcePath": "objects\\obj_yeager_door\\obj_yeager_door.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -627,7 +659,8 @@
         "6f0dc2f1-590b-4329-8d43-be8ad31bb0bc",
         "3d6415f8-3302-4fc7-af2c-3fe5763d6ccd",
         "f76037f2-bba4-4320-b546-b145cbc02d5e",
-        "60ae2829-7618-4029-971a-e0cf09498a51"
+        "60ae2829-7618-4029-971a-e0cf09498a51",
+        "13b5ca7f-f330-4164-8311-04c50bf80ef3"
     ],
     "tutorial": ""
 }
