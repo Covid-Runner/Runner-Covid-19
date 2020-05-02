@@ -3,9 +3,6 @@
 hsp = 0;
 vsp = 0;
 
-//tilemap = layer_tilemap_get_id("Street_modern_car");
-
-//arrayTile = array_create(5, "");
 arrayTile = [];
 
 arrayTile[0,0] = "Limit";
@@ -17,5 +14,4 @@ arrayTile[0,5] = "Street_modern_Things_on_ground";
 
 arrayTile[1,0] = "Mall_Main_Display";
 
-global.bag = ds_list_create();
-global.bag_maxsize = 4;
+

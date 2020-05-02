@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "983b9993-798a-4574-a35f-b739128c13cb"
+        },
+        {
+            "id": "aa1e5c9d-1df2-4e95-9c15-15c599e54edc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "983b9993-798a-4574-a35f-b739128c13cb"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -57,34 +67,6 @@
             "varType": 0
         },
         {
-            "id": "f8326f7c-145e-48da-8177-985fb2a70db4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "current_life",
-            "varType": 0
-        },
-        {
-            "id": "e518b267-3fc0-429d-9530-617f68d50a56",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "current_endurance",
-            "varType": 0
-        },
-        {
             "id": "a07a7402-1414-4d15-b1af-1c01824aa35e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -110,20 +92,6 @@
             "resourceFilter": 1023,
             "value": "42",
             "varName": "tired_endurance",
-            "varType": 0
-        },
-        {
-            "id": "a2f56330-c784-4cff-824f-1c3ea76e00c4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "current_mental_health",
             "varType": 0
         },
         {
