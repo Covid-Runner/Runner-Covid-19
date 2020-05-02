@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "021732dc-a0f5-4fa2-a6e0-b7ccd18c6edb",
-            "Value": {
-                "id": "dc7e956d-9339-435f-8d3b-853ea77eb31d",
-                "resourcePath": "views\\021732dc-a0f5-4fa2-a6e0-b7ccd18c6edb.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "0df70b30-0f16-4415-8eaf-cf5c56cc0147",
             "Value": {
                 "id": "bb1c3a23-1281-456e-8121-2519f03bf2f7",
@@ -52,14 +44,6 @@
                 "id": "416ad718-522a-4b96-af83-930dff4ad9cd",
                 "resourcePath": "views\\11449682-15b3-4cf9-ae6c-dc525ffe6b4e.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "1831d847-6771-410a-acef-4dd2c6eb7fc5",
-            "Value": {
-                "id": "37f11e1f-4339-47f4-994e-19eb6de9bc5b",
-                "resourcePath": "objects\\obj_gui_player\\obj_gui_player.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -100,6 +84,14 @@
                 "id": "78853c66-6263-4eab-a9f3-1d8a0f786100",
                 "resourcePath": "views\\2b42122f-5b32-41d3-b8e8-f568ba2b65d0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2c5c385d-fad4-4669-babc-c5239a1ca6a5",
+            "Value": {
+                "id": "2efd4b77-f371-46a4-ac0d-63415681bd89",
+                "resourcePath": "objects\\obj_yeager_transition\\obj_yeager_transition.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -287,14 +279,6 @@
             }
         },
         {
-            "Key": "6a18f2c1-eda7-47bf-99b5-eaa1604f62b8",
-            "Value": {
-                "id": "c96439b9-0e42-47df-ab86-76b29feb9401",
-                "resourcePath": "views\\6a18f2c1-eda7-47bf-99b5-eaa1604f62b8.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "6a19b7d4-7262-4661-b6c3-16fbde48d44b",
             "Value": {
                 "id": "e736a952-84ea-425c-89b6-8f474c2b6037",
@@ -396,14 +380,6 @@
                 "id": "ff77d4f0-7936-416d-86cb-a8433fc62d8e",
                 "resourcePath": "objects\\obj_yeager_building1\\obj_yeager_building1.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "84e97ee7-8954-4d0d-af16-5c09e30bfe60",
-            "Value": {
-                "id": "ffe679f0-4904-467c-bf01-aee3db2341e7",
-                "resourcePath": "views\\84e97ee7-8954-4d0d-af16-5c09e30bfe60.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -511,14 +487,6 @@
             }
         },
         {
-            "Key": "b9aeaac1-a658-4879-a458-c4d6346fb0a1",
-            "Value": {
-                "id": "5e0c28eb-c1ea-4f22-865d-4281e9f978bb",
-                "resourcePath": "sprites\\spr_gui_player\\spr_gui_player.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bceaa755-0c69-48eb-9426-fd813e972d96",
             "Value": {
                 "id": "297a08f3-14cd-4d4f-985e-0db8041e1a95",
@@ -540,14 +508,6 @@
                 "id": "159ddc46-ed67-4eb9-988a-1c5a6f1bde38",
                 "resourcePath": "views\\c3bd1c07-1b21-4598-be6a-c460b7c98092.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "cc6502d4-b8b5-4bdc-a39c-2c77c2aa5ac1",
-            "Value": {
-                "id": "6f6d71e9-aeed-4699-86a0-f1afc6bbe4e3",
-                "resourcePath": "objects\\obj_guiolgui_title\\obj_guiolgui_title.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -596,14 +556,6 @@
                 "id": "04a63307-ec42-4718-8316-6879709ed113",
                 "resourcePath": "rooms\\r_gui_title\\r_gui_title.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "d6fc7a3a-44aa-4561-bb8f-4aa99196ac98",
-            "Value": {
-                "id": "f54ef3db-41ad-4d20-bff9-8ee78c01de97",
-                "resourcePath": "sprites\\spr_yeager_background\\spr_yeager_background.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
