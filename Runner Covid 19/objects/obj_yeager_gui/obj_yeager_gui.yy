@@ -117,6 +117,34 @@
             "value": "10",
             "varName": "y_life",
             "varType": 0
+        },
+        {
+            "id": "45328d65-4790-482c-b437-017fb1da9ae4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "250",
+            "varName": "x_bag",
+            "varType": 0
+        },
+        {
+            "id": "97f0f76d-abec-4ae3-b8d8-5c8f9aa59015",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "y_bag",
+            "varType": 0
         }
     ],
     "solid": false,
