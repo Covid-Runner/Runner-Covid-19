@@ -139,6 +139,11 @@ if (global.bag_set != -1)
 				if (global.current_endurance > obj_yeager_player.max_endurance) global.current_endurance = obj_yeager_player.max_endurance; 
 				break;
 			}
+			case BOX_CONTENT.FUSIL :
+			{
+				game_end();
+				break;
+			}
 		}
 		ds_list_delete(global.bag, global.bag_set);
 		if (global.bag_set > 0) global.bag_set -= 1;
