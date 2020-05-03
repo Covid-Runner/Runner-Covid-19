@@ -8,3 +8,4 @@ global.current_life = 100;
 global.current_mental_health = 100;
 global.pos_old_room_x = 0;
 global.pos_old_room_y = 0;
+global.bag_set = -1;
