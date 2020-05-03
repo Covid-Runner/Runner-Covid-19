@@ -1,6 +1,6 @@
 /// @description Core Game
 
-if (room != r_lvl0_bedroom)
+if (room != r_lvl0_bedroom) && (room != r_end_losing) && (room != r_end_winning)
 {
 	var bbox_side;
 
@@ -303,21 +303,39 @@ if (global.bag_set != -1)
 	}
 }
 
-
-//endgame
-if (global.current_life == 0)
+if (room != r_end_losing) && (room != r_end_winning)
 {
-	scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
-//	scr_yeager_transition(TRANS_MODE.RESTART);
+	//endgame
+	if (global.current_life == 0)
+	{
+		scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
+	//	scr_yeager_transition(TRANS_MODE.RESTART);
+	}
+
+	if (global.current_mental_health == 0)
+	{
+		scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
+	//	scr_yeager_transition(TRANS_MODE.RESTART);
+	}
+
+	if (global.computer_set && global.plant_set && global.medic_set)
+	{
+		scr_yeager_transition(TRANS_MODE.GOTO, r_end_winning, 650, 4460);
+	}
 }
 
-if (global.current_mental_health == 0)
+if (room == r_end_winning)
 {
-	scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
-//	scr_yeager_transition(TRANS_MODE.RESTART);
+	if (keyboard_check_pressed(vk_enter))
+	{
+		scr_yeager_transition(TRANS_MODE.RESTART);
+	}
 }
 
-if (global.computer_set && global.plant_set && global.medic_set)
+if (room == r_end_losing)
 {
-	scr_yeager_transition(TRANS_MODE.GOTO, r_end_winning, 650, 4460);
+	if (keyboard_check_pressed(vk_enter))
+	{
+		scr_yeager_transition(TRANS_MODE.RESTART);
+	}
 }
