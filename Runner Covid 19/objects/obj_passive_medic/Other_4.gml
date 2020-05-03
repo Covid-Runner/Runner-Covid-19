@@ -2,5 +2,7 @@
 
 if (global.medic_get || global.medic_set)
 {
-	instance_destroy();
+	visible = false;
 }
+else
+	visible = true;
