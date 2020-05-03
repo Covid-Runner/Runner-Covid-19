@@ -1,5 +1,5 @@
-if (distance_to_object(obj_gui_player) < range) {
-	move_towards_point(obj_gui_player.x, obj_gui_player.y, spd);
+if (distance_to_object(obj_yeager_player) < range) {
+	move_towards_point(obj_yeager_player.x, obj_yeager_player.y, spd);
 }
 else
 speed = 0;
