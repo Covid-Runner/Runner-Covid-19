@@ -4,8 +4,9 @@
     "mvc": "1.1",
     "name": "b7839e2f-c248-4edd-ad2f-5bcb4f6504a9",
     "children": [
-        "f4ce6e18-1d5c-4767-a568-4609474988db",
-        "56e8187f-05ff-4129-9154-d563de3a963a"
+        "66cc4475-34ee-46c8-ae8c-102ff625597c",
+        "b9822c95-4bdb-4a30-b846-e2fdd659ee2c",
+        "16945e38-ef09-43ad-a1d7-3840f24386ec"
     ],
     "filterType": "GMObject",
     "folderName": "Interaction",

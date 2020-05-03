@@ -7,7 +7,10 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "149f294c-27bf-47fa-a6ad-48d2aa840af6"
+        "1064db59-539b-417b-82ea-4a5462b86f81",
+        "fe5e2fad-429d-440b-8d47-616c341b6c5c",
+        "2fbe40db-3f92-4546-8411-2d531fd66157",
+        "2430b651-e80b-4845-abca-aeb3c059a2c0"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +28,10 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_1C329F78","id": "149f294c-27bf-47fa-a6ad-48d2aa840af6","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1C329F78","objId": "cc6502d4-b8b5-4bdc-a39c-2c77c2aa5ac1","properties": null,"rotation": 0,"scaleX": 0.8333333,"scaleY": 0.8333333,"mvc": "1.1","x": 0,"y": 0}
+{"name": "inst_37199DAE","id": "1064db59-539b-417b-82ea-4a5462b86f81","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_37199DAE","objId": "2c5c385d-fad4-4669-babc-c5239a1ca6a5","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 832,"y": 672},
+{"name": "inst_11F2EEE5","id": "fe5e2fad-429d-440b-8d47-616c341b6c5c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_11F2EEE5","objId": "5426f6fe-1eb8-4dc7-a7ac-e9c954cc79ca","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 960,"y": 640},
+{"name": "inst_68F49B44","id": "2fbe40db-3f92-4546-8411-2d531fd66157","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_68F49B44","objId": "ddeda922-dd6b-42e0-ad45-6550ce67908c","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 576,"y": 320},
+{"name": "inst_1A3EA198","id": "2430b651-e80b-4845-abca-aeb3c059a2c0","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1A3EA198","objId": "45d9e23c-123e-463e-860a-ee28d6b1b16e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 800,"y": 512}
             ],
             "layers": [
 
@@ -48,7 +54,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": false,
+            "hierarchyVisible": true,
             "hspeed": 0,
             "htiled": false,
             "inheritLayerDepth": false,
@@ -62,11 +68,11 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "00000000-0000-0000-0000-000000000000",
-            "stretch": false,
+            "spriteId": "e76335fa-5aa1-4449-bc82-f15a9dfc1ebd",
+            "stretch": true,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
-            "visible": false,
+            "visible": true,
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
