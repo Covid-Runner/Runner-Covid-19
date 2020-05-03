@@ -144,6 +144,14 @@ if (global.bag_set != -1)
 					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
+				case BOX_CONTENT.ALCOOL :
+				{
+					global.current_mental_health += 42;
+					if (global.current_mental_health > obj_yeager_player.max_mental_health) global.current_mental_health = obj_yeager_player.max_mental_health;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
+					break;
+				}
 				case BOX_CONTENT.BOTTE :
 				{
 					global.current_endurance += 42;
@@ -161,6 +169,11 @@ if (global.bag_set != -1)
 				}
 				case BOX_CONTENT.MP3 :
 				{	
+					audio_stop_sound(obj_yeager_sound.music);
+					obj_yeager_sound.music = so_yeager_Beethoven___F_r_Elise;
+					audio_play_sound(obj_yeager_sound.music, 5, false);
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
 				default :
@@ -242,6 +255,10 @@ if (global.bag_set != -1)
 					break;
 				}
 				case BOX_CONTENT.BOTTE :
+				{
+					break;
+				}
+				case BOX_CONTENT.ALCOOL :
 				{
 					break;
 				}
