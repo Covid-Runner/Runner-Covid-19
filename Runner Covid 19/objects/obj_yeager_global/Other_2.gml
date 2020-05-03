@@ -9,3 +9,12 @@ global.current_mental_health = 100;
 global.pos_old_room_x = 0;
 global.pos_old_room_y = 0;
 global.bag_set = -1;
+
+global.computer_get = false;
+global.computer_set = false;
+
+global.medic_get = false;
+global.medic_set = false;
+
+global.plant_get = false;
+global.plant_set = false;

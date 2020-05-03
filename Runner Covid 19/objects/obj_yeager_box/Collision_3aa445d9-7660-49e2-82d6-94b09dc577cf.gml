@@ -17,6 +17,4 @@ if (keyboard_check(vk_space) && image_index == 0)
 	{
 		image_index++;
 	}
-
-	//instance_destroy();
 }

@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "52b221e4-9f14-4a81-9b91-4194e7d44079",
+            "Value": {
+                "id": "e760f3a3-16a4-4f71-addc-680e00150f2b",
+                "resourcePath": "objects\\obj_gui_plant_d\\obj_gui_plant_d.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "53121cac-20fd-48fc-82c6-91b5e0e81fec",
             "Value": {
                 "id": "7ac00d83-abef-4968-a34a-89d361f7ddf8",
@@ -347,6 +355,14 @@
             "Value": {
                 "id": "25f82573-56e5-48e8-8a1b-11ee9acf4190",
                 "resourcePath": "objects\\obj_yeager_menu\\obj_yeager_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "54c08df3-4831-446b-8f71-c45f2b7fec9b",
+            "Value": {
+                "id": "a4d38727-6d88-41ce-ad9c-9e0dc92d8476",
+                "resourcePath": "objects\\obj_gui_passive_computer_d\\obj_gui_passive_computer_d.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -852,6 +868,14 @@
                 "id": "d6ce2c95-6422-41a1-adb5-72fd6666c9a5",
                 "resourcePath": "sprites\\spr_cd\\spr_cd.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ecf62991-78af-4a44-a807-221504031882",
+            "Value": {
+                "id": "09ec679c-f677-4707-a82c-f295703cfac1",
+                "resourcePath": "objects\\obj_gui_passive_medic_d\\obj_gui_passive_medic_d.yy",
+                "resourceType": "GMObject"
             }
         },
         {
