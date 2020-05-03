@@ -1,4 +1,4 @@
 /// @description
 
-this = obj_darkdlul_cop;
+this = obj_cop;
 event_inherited();

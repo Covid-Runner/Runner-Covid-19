@@ -1,3 +1,3 @@
 /// @description
-this = obj_darkdlul_hugger;
+this = obj_hugger;
 event_inherited();
