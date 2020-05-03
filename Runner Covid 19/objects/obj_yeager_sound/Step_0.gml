@@ -29,5 +29,11 @@ if (!scr_yeager_any_audio_is_playing())
 			audio_play_sound(music, 5, true);
 			break;
 		}
+		case r_end_losing :
+		{
+			music = so_yeager_end_losing;
+			audio_play_sound(music, 5, true);
+			break;
+		}
 	}
 }

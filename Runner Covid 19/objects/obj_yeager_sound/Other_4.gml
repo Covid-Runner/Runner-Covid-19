@@ -31,5 +31,20 @@ if (music != so_yeager_Beethoven___F_r_Elise)
 			audio_play_sound(music, 5, true);
 			break;
 		}
+		case r_end_losing :
+		{
+			music = so_yeager_end_losing;
+			audio_play_sound(music, 5, true);
+			break;
+		}
+	}
+}
+else
+{
+	if (room == r_end_losing)
+	{
+		audio_stop_sound(music);
+		music = so_yeager_end_losing;
+		audio_play_sound(music, 5, true);
 	}
 }

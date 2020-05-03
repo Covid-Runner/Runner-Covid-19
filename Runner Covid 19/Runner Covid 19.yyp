@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0934c7cf-9223-46a8-822d-428a8144c2d9",
+            "Value": {
+                "id": "cf0e005d-4f01-430d-8750-fec5078d38b9",
+                "resourcePath": "sounds\\so_yeager_end_losing\\so_yeager_end_losing.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0df70b30-0f16-4415-8eaf-cf5c56cc0147",
             "Value": {
                 "id": "bb1c3a23-1281-456e-8121-2519f03bf2f7",
