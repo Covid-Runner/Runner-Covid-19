@@ -18,3 +18,9 @@ global.medic_set = false;
 
 global.plant_get = false;
 global.plant_set = false;
+
+global.mask_get = false;
+global.mask_set = false;
+
+global.money_get = false;
+global.money_set = false;

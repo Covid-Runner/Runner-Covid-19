@@ -2,7 +2,7 @@
 
 x1 = x;
 y1 = y;
-spd_multiplier = 0.75;
+spd_multiplier = 1;
 spd *= spd_multiplier;
 //debug
 if(debug)

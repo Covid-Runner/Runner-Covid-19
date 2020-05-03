@@ -16,5 +16,7 @@ if (room != r_lvl0_bedroom)
 	arrayTile[0,5] = "Street_modern_Things_on_ground";
 
 	arrayTile[1,0] = "Mall_Main_Display";
+	arrayTile[2,0] = "Wall_16_4";
+    arrayTile[2,1] = "Wall_4_16";
 
 }

@@ -12,7 +12,9 @@
         "c639138a-6a0a-490d-b62d-02b5e9b1fc64",
         "a6752978-4d20-4182-9a02-6bd70645289a",
         "9a2366e1-b093-4095-82d4-e4751c2ec802",
-        "251531c2-ea80-434a-a9cb-7abc7361310c"
+        "251531c2-ea80-434a-a9cb-7abc7361310c",
+        "f6a781b4-d1a7-43a6-96b6-b9069748a4c0",
+        "f7fb43dd-7b6b-43ea-9c3a-e44788dfaf03"
     ],
     "filterType": "GMSprite",
     "folderName": "Loot",

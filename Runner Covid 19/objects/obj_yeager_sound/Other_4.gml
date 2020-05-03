@@ -31,9 +31,21 @@ if (music != so_yeager_Beethoven___F_r_Elise)
 			audio_play_sound(music, 5, true);
 			break;
 		}
+		case r_lvl3_bank :
+		{
+			music = so_tsae_audio;
+			audio_play_sound(music, 5, true);
+			break;
+		}
 		case r_end_losing :
 		{
 			music = so_yeager_end_losing;
+			audio_play_sound(music, 5, true);
+			break;
+		}
+		case r_end_winning :
+		{
+			music = so_victory;
 			audio_play_sound(music, 5, true);
 			break;
 		}
@@ -45,6 +57,12 @@ else
 	{
 		audio_stop_sound(music);
 		music = so_yeager_end_losing;
+		audio_play_sound(music, 5, true);
+	}
+	if (room == r_end_winning)
+	{
+		audio_stop_sound(music);
+		music = so_victory;
 		audio_play_sound(music, 5, true);
 	}
 }

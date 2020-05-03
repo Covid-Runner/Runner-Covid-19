@@ -88,6 +88,16 @@ if (room != r_end_losing) && (room != r_end_winning)
 						text = spr_medic;
 						break;
 					}
+					case BOX_CONTENT.MONEY:
+					{
+						text = spr_pq;
+						break;
+					}
+					case BOX_CONTENT.MASK:
+					{
+						text = spr_mask;
+						break;
+					}
 	}
 			
 				if (i == global.bag_set) 

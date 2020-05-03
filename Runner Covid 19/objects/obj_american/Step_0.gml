@@ -1,5 +1,6 @@
 /// @description
 
 this = obj_american;
-show_debug_message("american " + string(aller) + " ; x = " + string(x) + " ; y = " + string(y));
+time_before_new_hit -= 1;
+if (time_before_new_hit <= 0) time_before_new_hit = 0;
 event_inherited();

@@ -11,7 +11,7 @@ if (room != r_lvl0_bedroom) && (room != r_end_losing) && (room != r_end_winning)
 	key_down = keyboard_check(ord("S"));
 
 	if (!keyboard_check(vk_lshift) && (!key_down || !key_up || !key_right || !key_left)) {
-		global.current_endurance += variation_up_endurance;
+		global.current_endurance += variation_up_endurance;		
 		if (global.current_endurance > max_endurance) global.current_endurance = max_endurance;
 	} else {
 		global.current_endurance -= variation_down_endurance;
@@ -36,11 +36,21 @@ if (room != r_lvl0_bedroom) && (room != r_end_losing) && (room != r_end_winning)
 	switch(room_get_name(room))
 	{
 		case "r_lvl1_street":
+		{
 			var j = 0;
 			break;
+		}
 		case "r_lvl2_mall":
+		{
 			var j = 1;
 			break;
+		}
+		case "r_lvl3_bank":
+		{
+			var j = 2;
+			break;
+		}
+		 
 	}
 	//for (var i = 0; i < 5; i++)
 	for (var i = 0; i < array_length_2d(arrayTile,j); i++)
@@ -49,16 +59,16 @@ if (room != r_lvl0_bedroom) && (room != r_end_losing) && (room != r_end_winning)
 		//horizontal collision
 		if (hsp > 0) bbox_side = bbox_right else bbox_side = bbox_left;
 		if (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_top) != 0) || (tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_bottom) != 0) {
-			if (hsp > 0) x = x - (x mod 16) + 15 - (bbox_right - x);
-			else x = x - (x mod 16) - (bbox_left - x);
+			if (hsp > 0) x = x - (x mod 4) + 3 - (bbox_right - x);
+			else x = x - (x mod 4) - (bbox_left - x);
 			hsp = 0;
 		}
 
 		//Vertical collision
 		if (vsp > 0) bbox_side = bbox_bottom else bbox_side = bbox_top;
 		if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + vsp) != 0) || (tilemap_get_at_pixel(tilemap, bbox_right, bbox_side + vsp) != 0) {
-			if (vsp > 0) y = y - (y mod 16) + 15 - (bbox_bottom - y);
-			else y = y - (y mod 16) - (bbox_top - y);
+			if (vsp > 0) y = y - (y mod 4) + 3 - (bbox_bottom - y);
+			else y = y - (y mod 4) - (bbox_top - y);
 			vsp = 0;
 		}
 
@@ -112,7 +122,6 @@ if (room != r_lvl0_bedroom) && (room != r_end_losing) && (room != r_end_winning)
 			image_index = 0;
 		}
 	}
-	show_debug_message(global.bag_set);
 }
 
 //Gestion Inventaire
@@ -198,6 +207,14 @@ if (global.bag_set != -1)
 					break;
 				}
 				case BOX_CONTENT.PLANT :
+				{
+					break;
+				}
+				case BOX_CONTENT.MONEY :
+				{
+					break;
+				}
+				case BOX_CONTENT.MASK :
 				{
 					break;
 				}
@@ -288,6 +305,14 @@ if (global.bag_set != -1)
 					break;
 				}
 				case BOX_CONTENT.PLANT :
+				{
+					break;
+				}
+				case BOX_CONTENT.MONEY :
+				{
+					break;
+				}
+				case BOX_CONTENT.MASK :
 				{
 					break;
 				}

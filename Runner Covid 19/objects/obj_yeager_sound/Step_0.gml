@@ -35,5 +35,11 @@ if (!scr_yeager_any_audio_is_playing())
 			audio_play_sound(music, 5, true);
 			break;
 		}
+		case r_end_winning :
+		{
+			music = so_victory;
+			audio_play_sound(music, 5, true);
+			break;
+		}
 	}
 }

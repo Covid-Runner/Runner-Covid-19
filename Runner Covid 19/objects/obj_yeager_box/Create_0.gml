@@ -9,7 +9,9 @@ enum BOX_CONTENT {
 	ALCOOL,
 	COMPUTER,
 	MEDIC,
-	PLANT
+	PLANT,
+	MONEY,
+	MASK
 }
 randomize();
 
