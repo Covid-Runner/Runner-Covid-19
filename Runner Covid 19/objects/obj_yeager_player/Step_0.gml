@@ -140,33 +140,74 @@ if (global.bag_set != -1)
 				{
 					global.current_life += 42;
 					if (global.current_life > obj_yeager_player.max_life) global.current_life = obj_yeager_player.max_life;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
+					break;
+				}
+				case BOX_CONTENT.ALCOOL :
+				{
+					global.current_mental_health += 42;
+					if (global.current_mental_health > obj_yeager_player.max_mental_health) global.current_mental_health = obj_yeager_player.max_mental_health;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
 				case BOX_CONTENT.BOTTE :
 				{
 					global.current_endurance += 42;
 					if (global.current_endurance > obj_yeager_player.max_endurance) global.current_endurance = obj_yeager_player.max_endurance; 
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
 				case BOX_CONTENT.FUSIL :
 				{
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					game_end();
 					break;
 				}
 				case BOX_CONTENT.MP3 :
+				{	
+					audio_stop_sound(obj_yeager_sound.music);
+					obj_yeager_sound.music = so_yeager_Beethoven___F_r_Elise;
+					audio_play_sound(obj_yeager_sound.music, 5, false);
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
+					break;
+				}
+				default :
 				{
-				
 					break;
 				}
 			}
-			ds_list_delete(global.bag, global.bag_set);
-			if (global.bag_set > 0) global.bag_set -= 1;
+
 		}
 		//Drop l'item
 		if (keyboard_check_pressed(ord("G")))
 		{
-			ds_list_delete(global.bag, global.bag_set);
-			if (global.bag_set > 0) global.bag_set -= 1;
+			switch (global.bag[| global.bag_set])
+			{
+				case BOX_CONTENT.COMPUTER :
+				{
+					break;
+				}
+				case BOX_CONTENT.MEDIC :
+				{
+					break;
+				}
+				case BOX_CONTENT.PLANT :
+				{
+					break;
+				}
+				default :
+				{
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
+					break;
+				}
+			}
+
 		}
 	}
 	else
@@ -188,24 +229,36 @@ if (global.bag_set != -1)
 			{
 				case BOX_CONTENT.BOUFFE :
 				{
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
 				case BOX_CONTENT.COMPUTER :
 				{
 					global.computer_set = true;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;			
 					break;
 				}
 				case BOX_CONTENT.MEDIC :
 				{
 					global.medic_set = true;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;			
 					break;
 				}
 				case BOX_CONTENT.PLANT :
 				{
 					global.plant_set = true;
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;			
 					break;
 				}
 				case BOX_CONTENT.BOTTE :
+				{
+					break;
+				}
+				case BOX_CONTENT.ALCOOL :
 				{
 					break;
 				}
@@ -218,8 +271,7 @@ if (global.bag_set != -1)
 					break;
 				}
 			}
-			ds_list_delete(global.bag, global.bag_set);
-			if (global.bag_set > 0) global.bag_set -= 1;
+
 		}
 		//Drop l'item
 		if (keyboard_check_pressed(ord("G")))
@@ -228,22 +280,24 @@ if (global.bag_set != -1)
 			{
 				case BOX_CONTENT.COMPUTER :
 				{
-					global.computer_get = false;
 					break;
 				}
 				case BOX_CONTENT.MEDIC :
 				{
-					global.medic_get = false;
 					break;
 				}
 				case BOX_CONTENT.PLANT :
 				{
-					global.plant_get = false;
+					break;
+				}
+				default :
+				{
+					ds_list_delete(global.bag, global.bag_set);
+					if (global.bag_set > 0) global.bag_set -= 1;
 					break;
 				}
 			}
-			ds_list_delete(global.bag, global.bag_set);
-			if (global.bag_set > 0) global.bag_set -= 1;
+
 		}
 	}
 }

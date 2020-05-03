@@ -122,7 +122,7 @@
             "Key": "2660b6b2-fa32-4387-85d7-10086272fa85",
             "Value": {
                 "id": "e4bf8c52-e6cd-4124-bc3f-cb95d73abd82",
-                "resourcePath": "sprites\\spr_tsae_bedroom_medic\\spr_tsae_bedroom_medic.yy",
+                "resourcePath": "sprites\\spr_bedroom_medic\\spr_bedroom_medic.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "26734342-4d85-46c8-a8ee-b0efba8eac16",
             "Value": {
                 "id": "c2ce4962-2076-4242-9b92-f7543e4e63ac",
-                "resourcePath": "sprites\\spr_tsae_bedroom_bouquet\\spr_tsae_bedroom_bouquet.yy",
+                "resourcePath": "sprites\\spr_bedroom_bouquet\\spr_bedroom_bouquet.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -199,11 +199,27 @@
             }
         },
         {
+            "Key": "33512f3a-a51a-4a2a-a2cf-97796816681d",
+            "Value": {
+                "id": "47f381be-22e6-4f79-bc17-ab95b18c8176",
+                "resourcePath": "sounds\\so_yeager_mall\\so_yeager_mall.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3697c7a2-758f-40e0-9441-dd63abd349af",
             "Value": {
                 "id": "c7afa625-4441-4ee7-836f-9359f7044dd3",
                 "resourcePath": "rooms\\r_lvl0_bedroom\\r_lvl0_bedroom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "37873d1f-500e-4f02-a1a7-5ae68bea9254",
+            "Value": {
+                "id": "3bf66e40-31d6-4198-9e73-92ad4641c860",
+                "resourcePath": "sounds\\so_yeager_bedroom\\so_yeager_bedroom.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -338,7 +354,7 @@
             "Key": "52b221e4-9f14-4a81-9b91-4194e7d44079",
             "Value": {
                 "id": "e760f3a3-16a4-4f71-addc-680e00150f2b",
-                "resourcePath": "objects\\obj_gui_plant_d\\obj_gui_plant_d.yy",
+                "resourcePath": "objects\\obj_plant_d\\obj_plant_d.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -362,7 +378,7 @@
             "Key": "54c08df3-4831-446b-8f71-c45f2b7fec9b",
             "Value": {
                 "id": "a4d38727-6d88-41ce-ad9c-9e0dc92d8476",
-                "resourcePath": "objects\\obj_gui_passive_computer_d\\obj_gui_passive_computer_d.yy",
+                "resourcePath": "objects\\obj_passive_computer_d\\obj_passive_computer_d.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -506,7 +522,7 @@
             "Key": "824c348b-5823-4364-a8d8-497d37f74065",
             "Value": {
                 "id": "46e1e0ba-38c3-4e58-ba92-425f48eb7900",
-                "resourcePath": "sprites\\spr_tsae_bedroom_ordi\\spr_tsae_bedroom_ordi.yy",
+                "resourcePath": "sprites\\spr_bedroom_ordi\\spr_bedroom_ordi.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -690,7 +706,7 @@
             "Key": "bca56d0f-6b0f-4fa5-9936-1ae9d4945016",
             "Value": {
                 "id": "790ffd66-277f-41e8-9f9b-dbec6451a59e",
-                "resourcePath": "sprites\\spr_tsae_bedroom_start\\spr_tsae_bedroom_start.yy",
+                "resourcePath": "sprites\\spr_bedroom_start\\spr_bedroom_start.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -738,7 +754,7 @@
             "Key": "cb9b5f76-42cb-4ce8-b11a-e8a5d2388357",
             "Value": {
                 "id": "3bb76ce2-1b57-4b52-8740-bac559ee6cd8",
-                "resourcePath": "objects\\obj_gui_passive_medic\\obj_gui_passive_medic.yy",
+                "resourcePath": "objects\\obj_passive_medic\\obj_passive_medic.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -754,7 +770,7 @@
             "Key": "cfd580fa-ce72-4458-81d8-f61ac573ca16",
             "Value": {
                 "id": "cd555f09-e8cf-49cb-b448-ea4f8eefe915",
-                "resourcePath": "objects\\obj_gui_passive_computer\\obj_gui_passive_computer.yy",
+                "resourcePath": "objects\\obj_passive_computer\\obj_passive_computer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -874,7 +890,7 @@
             "Key": "ecf62991-78af-4a44-a807-221504031882",
             "Value": {
                 "id": "09ec679c-f677-4707-a82c-f295703cfac1",
-                "resourcePath": "objects\\obj_gui_passive_medic_d\\obj_gui_passive_medic_d.yy",
+                "resourcePath": "objects\\obj_passive_medic_d\\obj_passive_medic_d.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -906,7 +922,7 @@
             "Key": "f5c19497-1c00-4695-b9c7-fe486736a514",
             "Value": {
                 "id": "57a980bd-d298-4448-9331-1f8eb53c75e4",
-                "resourcePath": "objects\\obj_gui_plant\\obj_gui_plant.yy",
+                "resourcePath": "objects\\obj_plant\\obj_plant.yy",
                 "resourceType": "GMObject"
             }
         },

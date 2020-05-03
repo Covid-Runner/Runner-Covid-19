@@ -1,1 +1,0 @@
-name = BOX_CONTENT.COMPUTER;
