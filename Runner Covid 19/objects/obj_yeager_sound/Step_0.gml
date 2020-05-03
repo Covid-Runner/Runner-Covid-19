@@ -41,5 +41,11 @@ if (!scr_yeager_any_audio_is_playing())
 			audio_play_sound(music, 5, true);
 			break;
 		}
+		case r_lvl3_bank :
+		{
+			music = so_tsae_audio;
+			audio_play_sound(music, 5, true);
+			break;
+		}
 	}
 }
