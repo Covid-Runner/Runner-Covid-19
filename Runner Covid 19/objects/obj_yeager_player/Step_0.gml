@@ -164,7 +164,8 @@ if (global.bag_set != -1)
 				{
 					ds_list_delete(global.bag, global.bag_set);
 					if (global.bag_set > 0) global.bag_set -= 1;
-					game_end();
+					scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
+					//game_end();
 					break;
 				}
 				case BOX_CONTENT.MP3 :
@@ -300,4 +301,23 @@ if (global.bag_set != -1)
 
 		}
 	}
+}
+
+
+//endgame
+if (global.current_life == 0)
+{
+	scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
+//	scr_yeager_transition(TRANS_MODE.RESTART);
+}
+
+if (global.current_mental_health == 0)
+{
+	scr_yeager_transition(TRANS_MODE.GOTO, r_end_losing, 650, 4460);
+//	scr_yeager_transition(TRANS_MODE.RESTART);
+}
+
+if (global.computer_set && global.plant_set && global.medic_set)
+{
+	scr_yeager_transition(TRANS_MODE.GOTO, r_end_winning, 650, 4460);
 }
