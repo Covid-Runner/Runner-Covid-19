@@ -1,14 +1,20 @@
 /// @description init
 
 enum BOX_CONTENT {
-	CD = 0,
+	MP3 = 0,
 	BOTTE,
-	GUN,
-	FOOD,
+	FUSIL,
+	BOUFFE,
 	VIDE
 }
 randomize();
-name = choose(BOX_CONTENT.CD, BOX_CONTENT.BOTTE,BOX_CONTENT.FOOD, BOX_CONTENT.GUN, BOX_CONTENT.VIDE);
-name = BOX_CONTENT.FOOD;
 
-       
+rng = random(100);
+
+if (rng >= 0) && (rng < 20) name = BOX_CONTENT.VIDE;
+if (rng >= 20) && (rng < 35) name = BOX_CONTENT.BOTTE;
+if (rng >= 35) && (rng < 70) name = BOX_CONTENT.BOUFFE;
+if (rng >= 70) && (rng < 95) name = BOX_CONTENT.MP3;
+if (rng >= 95) && (rng <= 100) name = BOX_CONTENT.FUSIL;
+
+
