@@ -112,51 +112,49 @@ if (room != r_lvl0_bedroom)
 			image_index = 0;
 		}
 	}
-
-
-	//Gestion Inventaire
-
-	if (global.bag_set != -1)
-	{
-		if (keyboard_check_pressed(ord("Q")))
-		{
-			if (global.bag_set > 0) global.bag_set -= 1;
-		}
-		if (keyboard_check_pressed(ord("E")))
-		{
-			if (global.bag_set < (global.bag_maxsize - 1)) global.bag_set += 1;
-		}
-		if (keyboard_check_pressed(ord("F")))
-		{
-			switch (global.bag[| global.bag_set])
-			{
-				case BOX_CONTENT.BOUFFE :
-				{
-					global.current_life += 42;
-					if (global.current_life > obj_yeager_player.max_life) global.current_life = obj_yeager_player.max_life;
-					break;
-				}
-				case BOX_CONTENT.BOTTE :
-				{
-					global.current_endurance += 42;
-					if (global.current_endurance > obj_yeager_player.max_endurance) global.current_endurance = obj_yeager_player.max_endurance; 
-					break;
-				}
-				case BOX_CONTENT.FUSIL :
-				{
-					game_end();
-					break;
-				}
-				case BOX_CONTENT.MP3 :
-				{
-				
-					break;
-				}
-			}
-			ds_list_delete(global.bag, global.bag_set);
-			if (global.bag_set > 0) global.bag_set -= 1;
-		}
-	}
-
 	show_debug_message(global.bag_set);
+}
+
+//Gestion Inventaire
+
+if (global.bag_set != -1)
+{
+	if (keyboard_check_pressed(ord("Q")))
+	{
+		if (global.bag_set > 0) global.bag_set -= 1;
+	}
+	if (keyboard_check_pressed(ord("E")))
+	{
+		if (global.bag_set < (global.bag_maxsize - 1)) global.bag_set += 1;
+	}
+	if (keyboard_check_pressed(ord("F")))
+	{
+		switch (global.bag[| global.bag_set])
+		{
+			case BOX_CONTENT.BOUFFE :
+			{
+				global.current_life += 42;
+				if (global.current_life > obj_yeager_player.max_life) global.current_life = obj_yeager_player.max_life;
+				break;
+			}
+			case BOX_CONTENT.BOTTE :
+			{
+				global.current_endurance += 42;
+				if (global.current_endurance > obj_yeager_player.max_endurance) global.current_endurance = obj_yeager_player.max_endurance; 
+				break;
+			}
+			case BOX_CONTENT.FUSIL :
+			{
+				game_end();
+				break;
+			}
+			case BOX_CONTENT.MP3 :
+			{
+				
+				break;
+			}
+		}
+		ds_list_delete(global.bag, global.bag_set);
+		if (global.bag_set > 0) global.bag_set -= 1;
+	}
 }
