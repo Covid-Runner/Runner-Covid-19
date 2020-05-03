@@ -66,7 +66,27 @@ if (instance_exists(obj_yeager_player)) {
 					text = spr_food;
 					break;
 				}
-			}
+				case BOX_CONTENT.ALCOOL:
+				{
+					text = spr_alcool;
+					break;
+				}
+				case BOX_CONTENT.COMPUTER:
+				{
+					text = spr_computer;
+					break;
+				}
+				case BOX_CONTENT.PLANT:
+				{
+					text = spr_plant;
+					break;
+				}
+				case BOX_CONTENT.MEDIC:
+				{
+					text = spr_medic;
+					break;
+				}
+}
 			
 			if (i == global.bag_set) 
 			{

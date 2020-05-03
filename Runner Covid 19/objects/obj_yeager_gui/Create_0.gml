@@ -4,5 +4,5 @@ follow = obj_yeager_player;
 textscale = 1;
 multiplier = 4;
 marge = 50;
-global.bag_set = -1;
+
 

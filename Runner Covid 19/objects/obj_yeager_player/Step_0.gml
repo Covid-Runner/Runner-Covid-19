@@ -112,12 +112,17 @@ if (room != r_lvl0_bedroom)
 			image_index = 0;
 		}
 	}
+	show_debug_message(global.bag_set);
+}
 
+//Gestion Inventaire
 
-	//Gestion Inventaire
-
-	if (global.bag_set != -1)
+if (global.bag_set != -1)
+{
+	if (room != r_lvl0_bedroom)
 	{
+		//Hors de la chambre
+		//change item
 		if (keyboard_check_pressed(ord("Q")))
 		{
 			if (global.bag_set > 0) global.bag_set -= 1;
@@ -126,6 +131,7 @@ if (room != r_lvl0_bedroom)
 		{
 			if (global.bag_set < (global.bag_maxsize - 1)) global.bag_set += 1;
 		}
+		//use item
 		if (keyboard_check_pressed(ord("F")))
 		{
 			switch (global.bag[| global.bag_set])
@@ -156,7 +162,88 @@ if (room != r_lvl0_bedroom)
 			ds_list_delete(global.bag, global.bag_set);
 			if (global.bag_set > 0) global.bag_set -= 1;
 		}
+		//Drop l'item
+		if (keyboard_check_pressed(ord("G")))
+		{
+			ds_list_delete(global.bag, global.bag_set);
+			if (global.bag_set > 0) global.bag_set -= 1;
+		}
 	}
-
-	show_debug_message(global.bag_set);
+	else
+	{
+		//Gestion de l'inventaire dans la chambre
+		//change item
+		if (keyboard_check_pressed(ord("Q")))
+		{
+			if (global.bag_set > 0) global.bag_set -= 1;
+		}
+		if (keyboard_check_pressed(ord("E")))
+		{
+			if (global.bag_set < (global.bag_maxsize - 1)) global.bag_set += 1;
+		}
+		//use
+		if (keyboard_check_pressed(ord("F")))
+		{
+			switch (global.bag[| global.bag_set])
+			{
+				case BOX_CONTENT.BOUFFE :
+				{
+					break;
+				}
+				case BOX_CONTENT.COMPUTER :
+				{
+					global.computer_set = true;
+					break;
+				}
+				case BOX_CONTENT.MEDIC :
+				{
+					global.medic_set = true;
+					break;
+				}
+				case BOX_CONTENT.PLANT :
+				{
+					global.plant_set = true;
+					break;
+				}
+				case BOX_CONTENT.BOTTE :
+				{
+					break;
+				}
+				case BOX_CONTENT.FUSIL :
+				{
+					break;
+				}
+				case BOX_CONTENT.MP3 :
+				{				
+					break;
+				}
+			}
+			ds_list_delete(global.bag, global.bag_set);
+			if (global.bag_set > 0) global.bag_set -= 1;
+		}
+		//Drop l'item
+		if (keyboard_check_pressed(ord("G")))
+		{
+			switch (global.bag[| global.bag_set])
+			{
+				case BOX_CONTENT.COMPUTER :
+				{
+					global.computer_get = false;
+					break;
+				}
+				case BOX_CONTENT.MEDIC :
+				{
+					global.medic_get = false;
+					break;
+				}
+				case BOX_CONTENT.PLANT :
+				{
+					global.plant_get = false;
+					break;
+				}
+			}
+			ds_list_delete(global.bag, global.bag_set);
+			if (global.bag_set > 0) global.bag_set -= 1;
+		}
+	}
 }
