@@ -199,11 +199,27 @@
             }
         },
         {
+            "Key": "33512f3a-a51a-4a2a-a2cf-97796816681d",
+            "Value": {
+                "id": "47f381be-22e6-4f79-bc17-ab95b18c8176",
+                "resourcePath": "sounds\\so_yeager_mall\\so_yeager_mall.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3697c7a2-758f-40e0-9441-dd63abd349af",
             "Value": {
                 "id": "c7afa625-4441-4ee7-836f-9359f7044dd3",
                 "resourcePath": "rooms\\r_lvl0_bedroom\\r_lvl0_bedroom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "37873d1f-500e-4f02-a1a7-5ae68bea9254",
+            "Value": {
+                "id": "3bf66e40-31d6-4198-9e73-92ad4641c860",
+                "resourcePath": "sounds\\so_yeager_bedroom\\so_yeager_bedroom.yy",
+                "resourceType": "GMSound"
             }
         },
         {
